@@ -1,5 +1,7 @@
 # Amplitude-Modulation
 
+##  Priyanka B (212224060197)
+
 EXP NO: 1	GENERATION AND DETECTION OF AM
 
 AIM:
@@ -26,7 +28,6 @@ Amplitude Modulation is the process of changing the amplitude of a relatively hi
 1)	Under modulation :	m<1, Em < Ec
 2)	Critical modulation: m-1, Em = Ec
 3)	Over modulation:	m>1, Em > Ec
-
 
 
 Note: Keep all the switch faults in off position
@@ -75,8 +76,42 @@ Compare the original modulating signal with the demodulated signal. PROCEDURE
 •	Verify the generated waveform using Tabulation and Model Waveform
 
 Program
-
-
+~~~
+clc;
+clear;
+close;
+Ac=15.6;
+Am=7.8;
+Fc=3900;
+Fm=390;
+Fs=40000;
+t=0:1/Fs:2/Fm;
+E1=Am*sin(2*%pi*Fm*t);
+subplot(4,1,1);
+plot(t,E1);
+xlabel("Time(s");
+ylabel("Amplitude");
+title("Message Signal");
+E2=Ac*sin(2*%pi*Fc*t);
+subplot(4,1,2);
+plot(t,E2);
+xlabel("Time(s");
+ylabel("Amplitude");
+title("Carrier Signal");
+E3=(Ac+Am*sin(2*%pi*Fm*t)).sin(2%pi*Fc*t);
+subplot(4,1,3);
+plot(t,E3);
+xlabel("Time(s");
+ylabel("Amplitude");
+title("AM Signal");
+demodulated_signal=abs(hilbert(E3))-Ac;
+subplot(4,1,4);
+plot(t,demodulated_signal);
+xlabel("Time(s");
+ylabel("Amplitude");
+title("Demodulated Signal");
+xgrid();
+~~~
 
 Output Waveform
 
@@ -89,8 +124,9 @@ TABULATION:
 
 
 Calculation
-1.	ma (Theory) = am/ac =
-2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =
+1.	ma (Theory) = am/ac = 0.5
+2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) = 0.2540
+
 
 
 MODEL GRAPH
