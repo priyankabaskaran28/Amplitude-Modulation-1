@@ -6,7 +6,7 @@ EXP NO: 1	GENERATION AND DETECTION OF AM
 
 AIM:
 
-To generate and detect the amplitude modulation and demodulation u s i n g S C I L A B and to calculate modulation index of AM.
+To generate and detect the amplitude modulation and demodulation using S C I L A B and to calculate modulation index of AM.
 
 EQUIPMENTS REQUIRED
 
@@ -82,9 +82,9 @@ clear;
 close;
 Ac=15.6;
 Am=7.8;
-Fc=3900;
-Fm=390;
-Fs=40000;
+Fc=4400;
+Fm=440;
+Fs=44000;
 t=0:1/Fs:2/Fm;
 E1=Am*sin(2*%pi*Fm*t);
 subplot(4,1,1);
@@ -113,10 +113,10 @@ title("Demodulated Signal");
 xgrid();
 ~~~
 
-Output Waveform
-
-
-
+OUTPUT:
+<img width="1200" height="1200" alt="EXP1_ANALOG" src="https://github.com/user-attachments/assets/689503ed-7853-4259-bf59-02e9a1ac54f6" />
+(OUTPUT WAVEFORM)
+<img width="1919" height="1134" alt="EXP1_OUTPUT" src="https://github.com/user-attachments/assets/eb410009-643f-4ba5-9f92-71b55e16080f" />
 
 
 TABULATION:
@@ -131,10 +131,6 @@ Calculation
 
 MODEL GRAPH
  <img width="919" height="1290" alt="image" src="https://github.com/user-attachments/assets/55326c5b-7dd5-4873-aaf6-d219bb7c4420" />
-
- 
- 
-
 
 RESULT:
 Thus the amplitude modulation and demodulation is experimentally done and the output is verified.
