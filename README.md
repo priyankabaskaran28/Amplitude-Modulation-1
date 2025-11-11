@@ -17,6 +17,7 @@ EQUIPMENTS REQUIRED
 THEORY:
 
 Modulation can be defined as the process by which the characteristics of carrier wave are varied in accordance with the modulating wave (signal). Modulation is performed in a transmitter by a circuit called a modulator.
+
 Need for modulation is as follows:
 •	Avoid mixing of signals
 •	Reduction in antenna height
@@ -24,7 +25,9 @@ Need for modulation is as follows:
 •	Multiplexing
 •	Improve the quality of reception
 •	Ease of radiation.
+
 Amplitude Modulation is the process of changing the amplitude of a relatively high frequency carrier signal in proportion with the instantaneous value of the modulating signal. The output waveform contains all the frequencies that make up the AM signal and is used to transport the information through the system. Therefore the shape of the modulated wave is called the AM envelope. With no modulating signal the output waveform is simply the carrier signal. Coefficient of modulation is a term used to describe the amount of amplitude change present in an AM waveform. There are three degrees of modulation available based on value of modulation index.
+
 1)	Under modulation :	m<1, Em < Ec
 2)	Critical modulation: m-1, Em = Ec
 3)	Over modulation:	m>1, Em > Ec
